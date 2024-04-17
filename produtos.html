@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="IMAGES/i5.webp" type="image/x-icon">
+    <title>Catálogo</title>
+</head>
+<body>
+    <nav>
+        <img src="./IMAGES/i5.webp" alt="">
+        <h1>Auto Market</h1>
+        <a href="#novos">Novos</a>
+        <a href="#usados">Usados</a>
+        <a href="#semiNovos">Semi-novos</a>
+        <a href="#anunciar">Anunciar</a>
+    </nav>
+    <h2 style="text-align: center; margin: 50px 0 0 0;" id="novos">Novos</h2>
+    <section class="productsSection">
+        <div class="product">
+            <h3>BMW 24</h3>
+            <img src="./IMAGES/i7.webp" alt="">
+            <p>R$ <span class="precoR"></span></p>
+        </div>
+        <div class="product">
+            <h3>Ford IPV4</h3>
+            <img src="./IMAGES/i8.webp" alt="">
+            <p>R$ <span class="precoR"></span></p>
+        </div>
+    </section>
+    <hr>
+    <h2 style="text-align: center; margin: 50px 0 0 0;" id="usados">Usados</h2>
+    <section class="productsSection">
+        <div class="product">
+            <h3>Lamborghini NullByte</h3>
+            <img src="./IMAGES/i9.webp" alt="">
+            <p>R$ <span class="precoR"></span></p>
+        </div>
+        <div class="product">
+            <h3>VW Fuscão</h3>
+            <img src="./IMAGES/i10.webp" alt="">
+            <p>R$ <span class="precoR"></span></p>
+        </div>
+    </section>
+    <hr>
+    <h2 style="text-align: center; margin: 50px 0 0 0;" id="semiNovos">Semi-Novos</h2>
+    <section class="productsSection">
+        <div class="product">
+            <h3>Moto GP3</h3>
+            <img src="./IMAGES/i12.webp" alt="">
+            <p>R$ <span class="precoR"></span></p>
+        </div>
+        <div class="product">
+            <h3>Harley 80s</h3>
+            <img src="./IMAGES/i13.webp" alt="">
+            <p>R$ <span class="precoR"></span></p>
+        </div>
+    </section>
+    <hr>
+
+    <section id="anunciar">
+        <form action="" method="GET">
+            <h1>Entre em contato para anunciar</h1>
+            <div class="inputGroup">
+                <label for="localizacao">Localização</label>
+                <input type="text" required>
+            </div>
+            <br>
+            <div class="inputGroup">
+                <label for="email">Email de Retorno</label>
+                <input type="email" required>
+            </div>
+            <br>
+            <div class="inputGroup">
+                <label for="placa">Placa</label>
+                <input type="text" required>
+            </div>
+            <br>
+            <div class="inputGroup">
+                <label for="codigoEmail">Codigo Email</label>
+                <input type="number" required>
+            </div>
+            <br>
+            <div class="inputGroup">
+                <label for="imagem">Imagem do Carro</label>
+                <input type="image">
+            </div>
+            <br>
+            <div class="inputGroup">
+                <label for="kmRodados">KM Rodados</label>
+                <input type="number" required>
+            </div>
+    
+            <button class="bButton" type="submit">Enviar!</button>
+        </form>
+    </section>
+    <footer style="padding: 20px; border: 1px solid #005;">
+        <p>Made with <span style="color: #ff0000;" class="pulseAnimation">Love</span> by <a target="_blank" href="https://github.com/capelosini">@capelosini</a> | Copyright <span id="yearNow"></span></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
